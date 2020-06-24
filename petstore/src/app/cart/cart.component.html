@@ -1,0 +1,34 @@
+<!-- show the items array in the cart.component.html.-->
+
+<h3>Cart</h3>
+
+<div class="cart-item" *ngFor="let info of items">
+    <span>{{ info.name }} </span>
+    <span> {{ info.price | currency }}</span>
+</div>
+
+<!--Create the checkout form
+Use a formGroup property binding to bind the checkoutForm to the form tag in the template. 
+Also include a "Purchase" button to submit the form.-->
+
+
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+    <div>
+        <label for="name">
+     Name
+   </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+        <label for="address">
+     Address
+   </label>
+        <input id="address" type="text" formControlName="address">
+    </div>
+
+    <button class="button" type="submit">Purchase</button>
+
+</form>
