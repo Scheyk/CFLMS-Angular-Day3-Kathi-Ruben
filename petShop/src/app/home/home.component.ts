@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { artikel } from '../products';
+import { artikels } from '../products';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { artikel } from '../products';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-	artikel = artikel;
+	artikels = artikels;
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-export const artikel = [
+export const artikels = [
 	{
 		name: 'Furminator small',
 		price : 20,
@@ -15,7 +15,7 @@ export const artikel = [
 		description: '4 verschiedene fleischsorten im günstigen Multipack'
 	},
 	{
-		name: 'Felix Wild',
+		name: 'Felix "Wild"',
 		price : 5.78,
 		description: ''
 	}
